@@ -5,50 +5,103 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/normalize.css">
-    <link rel="stylesheet" href="./assets/Blocks/hero.css">
+    <link rel="stylesheet" href="./assets/Blocks/hero-section.css">
+    <link rel="stylesheet" href="./assets/Blocks/article-section.css">
+    <link rel="stylesheet" href="./assets/Blocks/info-section.css">
     <title>RWP1</title>
 </head>
-<body>
+<body class="body">
     <section class="hero">
         <header class="header">
             <div class="logo">
-                <img class="logo__img" src="./assets/img/logo.png">
+                <img class="logo__img" src="./assets/img/logo.png" alt="Logo">
                 <h2 class="logo__text logo__text_copyright">theyalow</h2>
             </div>
 
             <nav class="nav">
                 <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/person.svg">
+                    <img class="nav-element__img" src="./assets/img/person.svg" alt="Navigation icon">
                     <a href="#" class="nav-element__link">About us</a>
                 </div>
                 <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/wrench.svg">
+                    <img class="nav-element__img" src="./assets/img/wrench.svg" alt="Navigation icon">
                     <a href="#" class="nav-element__link">Services</a>
                 </div>
                     <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/mail.svg">
+                    <img class="nav-element__img" src="./assets/img/mail.svg" alt="Navigation icon">
                     <a href="#" class="nav-element__link">Contact</a>
                 </div>
             </nav>
         </header>
+
         <div class="title">
             <h1 class="title__text title__text_highlighted">The cool</h1>
             <h1 class="title__text ">The minimal</h1>
         </div>
     </section>
+
     <section class="services">
         <div class="service">
-            <img class="service__img" src="/assets/img/cloud.svg">
+            <img class="service__img" src="/assets/img/cloud.svg" alt="Service icon">
             <h3 class="service__title">Better Design</h3>
         </div>
         <div class="service">
-            <img class="service__img" src="/assets/img/leaf.svg">
+            <img class="service__img" src="/assets/img/leaf.svg" alt="Service icon">
             <h3 class="service__title">Customise</h3>
         </div>
         <div class="service">
-            <img class="service__img" src="/assets/img/flying-paper.svg">
+            <img class="service__img" src="/assets/img/flying-paper.svg" alt="Service icon">
             <h3 class="service__title">It's free</h3>
         </div>
     </section>
+
+    <article class="article-section">
+        <div class="article-wrapper">
+            <h2 class="article__title">
+                Lorem ipsum dolor sit amet
+            </h2>
+
+            <div class="article-container">
+                <div class="article-box">
+                    <p class="article-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dignissimos, quaerat ratione! Ex eligendi fugit libero error!</p>
+                        <img class="article-box__mini-icon" src="/assets/img/article-plus.svg">
+                    </div>
+                <div class="article-box article-box_video-box">
+                    <img class="article-box__play-icon" src="/assets/img/article-play.png" alt="Play icon">
+                </div>
+                <div class="article-box article-box_social-media">
+                    <img class="article-box__icon" src="./assets/img/twitter.svg" alt="Article icon">
+                    <img class="article-box__mini-icon" src="/assets/img/article-plus.svg">
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <section class="info-section">
+        <div class="info-wrapper">
+            <h2 class="info-wrapper__title">Lorem ipsum dolor sit amet.</h2>
+            <div class="info-container">
+                <img class="info-container__figure" src="/assets/img/info-devices.png" alt="Multiple displays" >
+                
+                    <ul class="info-list">
+                        <li class="info-list__item">Our products are the best</li>
+                        <li class="info-list__item">We are proud to serve you</li>
+                        <li class="info-list__item">Our income is increasing every year</li>
+                        <li class="info-list__item">We won multiple awards in cartoon production</li>
+                    </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo logo_footer">
+            <img class="logo__img logo__img_footer" src="./assets/img/logo.png" alt="Logo">
+            <h2 class="logo__text logo__text_footer">theyalow</h2>
+        </div>
+    </footer>
+
 </body>
 </html>

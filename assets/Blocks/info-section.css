@@ -1,0 +1,75 @@
+.info-section
+{
+    background-color: #4c4c4c;
+    padding-bottom: 70px;
+}
+
+.info-wrapper
+{
+    width: 78%;
+    margin: auto;
+}
+
+.info-wrapper__title
+{
+    margin: 0;
+    text-align: center;
+    line-height: 120px;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:#f5c506;
+}
+
+.info-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-container__figure
+{
+    max-width: 55%;
+}
+
+.info-list
+{
+    width: 370px;
+}
+
+.info-list__item
+{
+    font-size: 1.6rem;
+    line-height: 45px;
+    color: gray;
+    list-style: url(/assets/img/ellipse.svg);
+}
+
+.footer 
+{
+    background-color: #4c4c4c;
+    border-top: solid 2px #2c2c2c;
+}
+
+.logo_footer
+{
+    width: 260px;
+    height: 70px;
+    margin: auto;
+}
+
+.logo__text_footer::after
+{
+    content: none;
+}
+
+.logo__img_footer
+{
+    height: 60px;
+}
+
+.logo__text_footer
+{
+    font-size: 1.8rem;
+}
