@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/Blocks/hero-section.css">
+    <link rel="stylesheet" href="./assets/Blocks/services-section.css">
     <link rel="stylesheet" href="./assets/Blocks/article-section.css">
     <link rel="stylesheet" href="./assets/Blocks/info-section.css">
     <title>RWP1</title>
@@ -13,22 +14,28 @@
 <body class="body">
     <section class="hero">
         <header class="header">
-            <div class="logo">
-                <img class="logo__img" src="./assets/img/logo.png" alt="Logo">
+            <div class="logo logo_hidden">
+                <img class="logo__img" src="./assets/img/logo.png" alt="Theyalow logo">
                 <h2 class="logo__text logo__text_copyright">theyalow</h2>
             </div>
 
             <nav class="nav">
+
+                <div class="nav-element nav-element_responsive" >
+                    <img class="nav-element__img_logo" src="./assets/img/logo.png" alt="Theyalow logo">
+                    <a href="#" class="nav-element__link nav-element__link_logo">theyalow</a>
+                </div>
+
                 <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/person.svg" alt="Navigation icon">
+                    <img class="nav-element__img" src="./assets/img/person.svg" alt="Person icon">
                     <a href="#" class="nav-element__link">About us</a>
                 </div>
                 <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/wrench.svg" alt="Navigation icon">
+                    <img class="nav-element__img" src="./assets/img/wrench.svg" alt="Wrench icon">
                     <a href="#" class="nav-element__link">Services</a>
                 </div>
                     <div class="nav-element">
-                    <img class="nav-element__img" src="./assets/img/mail.svg" alt="Navigation icon">
+                    <img class="nav-element__img" src="./assets/img/mail.svg" alt="Mail icon">
                     <a href="#" class="nav-element__link">Contact</a>
                 </div>
             </nav>
@@ -65,14 +72,14 @@
                 <div class="article-box">
                     <p class="article-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Dignissimos, quaerat ratione! Ex eligendi fugit libero error!</p>
-                        <img class="article-box__mini-icon" src="/assets/img/article-plus.svg">
+                        <img class="article-box__mini-icon" src="/assets/img/article-plus.svg" alt="Plus icon">
                     </div>
                 <div class="article-box article-box_video-box">
                     <img class="article-box__play-icon" src="/assets/img/article-play.png" alt="Play icon">
                 </div>
                 <div class="article-box article-box_social-media">
-                    <img class="article-box__icon" src="./assets/img/twitter.svg" alt="Article icon">
-                    <img class="article-box__mini-icon" src="/assets/img/article-plus.svg">
+                    <img class="article-box__icon" src="./assets/img/twitter.svg" alt="Twitter icon">
+                    <img class="article-box__mini-icon" src="/assets/img/article-plus.svg"  alt="Plus icon">
                 </div>
             </div>
 
@@ -102,6 +109,5 @@
             <h2 class="logo__text logo__text_footer">theyalow</h2>
         </div>
     </footer>
-
 </body>
 </html>
