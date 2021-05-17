@@ -3,7 +3,7 @@
     margin: 0;
     padding-bottom: 160px;
 
-    background-image: url(../img/background-article.png);
+    background-image: url(../../assets/img/background-article.png);
 }
 
 .article-wrapper
@@ -62,7 +62,7 @@
 
 .article-box_video-box
 {
-    background-image: url(../img/article-video.png);
+    background-image: url(../../assets/img/article-video.png);
     background-size: cover;
 }
 
