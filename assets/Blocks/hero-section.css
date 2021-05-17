@@ -10,7 +10,7 @@
 {
     padding: 18px 0;
 
-    background-image: url(/assets/img/hero-background.png);
+    background-image: url(../img/hero-background.png);
 }
 
 .header
@@ -247,7 +247,7 @@
         height: 32rem;
         margin: 3.5rem 0 0 0;
 
-        background-image: url(/assets/img/hero-player.png);
+        background-image: url(../img/hero-player.png);
         background-position: center;
         background-size: cover;
     }

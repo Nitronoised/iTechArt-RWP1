@@ -50,7 +50,7 @@
     font-size: 1.6rem;
     line-height: 45px;
 
-    list-style: url(/assets/img/ellipse.svg);
+    list-style: url(../img/ellipse.svg);
 
     color: gray;
 }
