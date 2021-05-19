@@ -42,7 +42,8 @@
 
 .service__img
 {
-    max-width: 50%;
+   width: 50%;
+   height: 50%;
 }
 
 .service__title
@@ -75,6 +76,7 @@
     .services
     {
         padding: 0;
+        height: 180px;
     }
     .service
     {
@@ -92,6 +94,7 @@
 
     .service__img
     {
-        max-width: 35%;
+        height: 60%;
+        width: 60%;
     }
 }

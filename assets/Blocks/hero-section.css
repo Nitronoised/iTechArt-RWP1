@@ -34,7 +34,8 @@
 
 .logo__img
 {
-    max-width: 4.7rem;
+    width: 13%;
+    height: auto;
 }
 
 .logo__text
@@ -67,7 +68,7 @@
 {
     display: flex;
 
-    min-width: 25rem;
+    width: 25rem;
     height: 2.3rem;
     margin-top: 2.3rem;
     padding: 0 1.6rem;
@@ -93,6 +94,7 @@
 .nav-element:nth-child(2)
 {
     padding-right: .9rem;
+    margin-left: .7rem;
 }
 
 .nav-element:nth-child(3)
@@ -117,7 +119,7 @@
 
 .nav-element__img
 {
-    max-width: 1.6rem;
+    width: 1.5rem;
     margin-right: 5px;
 }
 
@@ -281,6 +283,6 @@
     }
     .nav-element__img_logo
     {
-        max-width: 30%;
+        width: 30%;
     }
 }
