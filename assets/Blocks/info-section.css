@@ -83,8 +83,7 @@
 {
     content: none;
 }
-
-.logo__img_footer
+.logo__img_footer /*Invalid modifier name, better to change element name and keep blocks general*/
 {
     width: 2.7rem;
 }
