@@ -7,6 +7,7 @@ class Rectangle extends Shape {
         this.width = width;
         this.name = 'Rectangle';
     }
+
     getPerimeter() {
         return (this.height * 2) + (this.width * 2)
     }
@@ -31,38 +32,52 @@ class Square extends Shape {
 class ShapeStore {
     constructor(...shapes) {
         this.storage = [];
-        for (let shape of shapes) {
-            if (shape instanceof Shape) this.storage.push(shape)
+        for (const shape of shapes) {
+            //if should always have curly braces, not inline
+            if (!shape instanceof Shape) {
+                throw new Error("One of the objects entered is not a shape!");
+            }
+
+            this.storage.push(shape);
         }
     }
 
     sumRectPerimeters() {
         let rectSum = 0;
         for (let shape of this.storage) {
-            if (shape instanceof Rectangle) rectSum += shape.getArea();
+            if (shape instanceof Rectangle) {
+                rectSum += shape.getArea();
+            }
         }
+
         return rectSum
     }
+
     sumSquareAreas() {
         let sqrSum = 0;
         for (let shape of this.storage) {
-            if (shape instanceof Square) sqrSum += shape.getArea();
+            if (shape instanceof Square) {
+                sqrSum += shape.getArea();
+            }
         }
+
         return sqrSum
     }
 
     addShape(...newShape) {
         for (let shape of newShape) {
-            if (shape instanceof Shape) {
-                this.storage.push(shape)
-            } else {
+            if (!shape instanceof Shape) {
                 throw new Error("One of the objects entered is not a shape!");
             }
+
+            this.storage.push(shape)
         }
+
         return this.storage
     }
 }
 
+/* for testing
 let sqr = new Square(5);
 let sqr2 = new Square(10);
 let sqr3 = new Square(15);
@@ -86,3 +101,4 @@ try {
 catch (e) {
     console.log(e.message)
 }
+*/

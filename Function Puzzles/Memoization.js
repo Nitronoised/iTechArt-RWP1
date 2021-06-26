@@ -1,31 +1,38 @@
 function heavyCPU(a) {
-    if (typeof a !== 'number') { throw new TypeError('A number is expected.') }
+    if (typeof a !== 'number') {
+        throw new TypeError('A number is expected.')
+    }
+
     return (a / Math.pow(a, 5)) + 1500 - a
 }
 
 function cacher(func, hash) {
-    let cache = new Map();
+    const cache = new Map();
+//we should have empty line before return
     return function () {
-        let key = hash(arguments);
+        const key = hash(arguments);
         if (cache.has(key)) {
             return cache.get(key)
         }
-        let result = func(...arguments);
+//empty line after "if" in case we don't have one more "if" statements followed
+        const result = func(...arguments);
         cache.set(key, result)
-        return result
 
+        return result
     }
 }
+
 function hashGen(args) {
-    let hash = '';
+    /*let hash = '';
+    
+    can be simplified
     for (let arg of args) {
         hash += arg
-    }
-    return hash
-
+    }*/
+    return args.join('');
 }
 
-heavyCPU = cacher(heavyCPU, hashGen);
+/*heavyCPU = cacher(heavyCPU, hashGen);
 
 try {
     console.log(heavyCPU(11, null))
@@ -33,4 +40,4 @@ try {
 }
 catch (e) {
     console.info(e)
-}
+}*/

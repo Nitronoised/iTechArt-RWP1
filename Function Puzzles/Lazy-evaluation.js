@@ -4,13 +4,14 @@ function makeCalculation(...args) {
     });
 }
 
-let lazy = function (func, ...rest) {
+const lazy = function (func, ...rest) {
     return function () {
         return func.apply(this, rest);
     }
 }
 
-let lazyCalc = lazy(makeCalculation, 1, 2, 3, 4)
+//const instead of let
+const lazyCalc = lazy(makeCalculation, 1, 2, 3, 4)
 
 console.log(lazyCalc())
 

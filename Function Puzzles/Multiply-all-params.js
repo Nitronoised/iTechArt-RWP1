@@ -1,9 +1,10 @@
 function multiply(...args) {
     let accum = 1;
-    for (let arg of args) {
+    for (const arg of args) {
         accum *= arg
     }
-    return accum
+
+    return accum;
 }
 
-console.log(multiply(2, 2, 2, 2, 2, 2, 2, 2, 2))
+//console.log(multiply(2, 2, 2, 2, 2, 2, 2, 2, 2))

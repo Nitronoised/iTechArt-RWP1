@@ -10,6 +10,7 @@ function curry(func) {
     };
 }
 
+/* for testing
 function multiplied(A, B, C) {
     return [A / 2 * C, B + 120, C * C].reduce((a, b) => a * b)
 }
@@ -21,6 +22,7 @@ let secondCalc = firstCalc(2);
 
 console.log(curriedMultiply(1, 2)(3));
 console.log(secondCalc(2));
-console.log(firstCalc(3)(5));
+console.log(firstCalc(3)(5)); */
+
 
 
